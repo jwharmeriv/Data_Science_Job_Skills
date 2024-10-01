@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Job_Skills_for_Data_Science_Classifier
 An exploratory data analysis on data science job skills with a model for predicting the most important skills.
 
@@ -23,5 +23,4 @@ Discuss the implications of your analysis and any recommendations or future work
 - `Capstone_2_Final.ipynb`: Main Jupyter Notebook with the final analysis and model.
 - `data/`: The dataset(s) used in the project.
 - `README.md`: This file containing the final project report.
-=======
->>>>>>> 1b9b401572e61a04829f0528db9d2cee0a16c2f8
+
