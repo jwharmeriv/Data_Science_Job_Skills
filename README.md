@@ -33,10 +33,16 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 ## EDA
 [EDA Report](http://localhost:8888/notebooks/Desktop/Data_Science_Job_Skills/Capstone_2_Final.ipynb)
 
-
+![Job Title Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Job%20Title%20Count.png)
+![Skill Counts](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Skill%20Counts.png)
+![Job Count by State](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Job%20Counts%20by%20State.png)
+![Industry Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Industry%20Hiring%20Counts.png)
 
 ## Results
 Summarize your findings, highlighting the key insights from the analysis. Use bullet points for clarity.
+After testing and tuning all 3 models (Logistic Regression, Random Forest, Stacked LightGBM + XGBoost), I chose the Random Forest model for its scalability, predictive power, and efficiency (especially compared to the stacked model).
+
+
 
 ## Conclusion
 Discuss the implications of your analysis and any recommendations or future work.
