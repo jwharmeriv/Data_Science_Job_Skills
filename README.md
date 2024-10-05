@@ -33,6 +33,8 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 ## EDA
 [EDA Report](http://localhost:8888/notebooks/Desktop/Data_Science_Job_Skills/Capstone_2_Final.ipynb)
 
+
+
 ## Results
 Summarize your findings, highlighting the key insights from the analysis. Use bullet points for clarity.
 
