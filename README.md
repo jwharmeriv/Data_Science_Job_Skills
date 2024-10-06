@@ -38,7 +38,9 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 ![Job Count by State](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Job%20Counts%20by%20State.png)
 ![Industry Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Industry%20Hiring%20Counts.png)
 
-## Results
+
+
+## Modeling
 Summarize your findings, highlighting the key insights from the analysis. Use bullet points for clarity.
 After testing and tuning all 3 models (Logistic Regression, Random Forest, Stacked LightGBM + XGBoost), I chose the Random Forest model for its scalability, predictive power, and efficiency (especially compared to the stacked model).
 
