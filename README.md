@@ -31,7 +31,7 @@ Next I needed to indentify the locations of the job openings by state with "Remo
 Now a list of skills needed to be defined, so I could make predictions on which ones to focus on learning first. While this is a subjective selection, I still feel it is a good selection of skills and software to know based on my previous 8 months of researching open positions. I chose what I considered to be the top 20 most common ones I have seen as well as the ones that appeared in this dataset. In fairness, a more exhaustive list could be created by counting all of the skills and software listed in the dataset. I would also consider updating this list on a yearly basis to capture any new skills or emerging technology/software to stay current.
 
 ## EDA
-[EDA Report](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Capstone_2_Final.ipynb)
+[EDA Report](https://nbviewer.org/github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Capstone_2_Final.ipynb)
 
 ![Job Title Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Job%20Title%20Count.png)
 
