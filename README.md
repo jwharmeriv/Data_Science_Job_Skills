@@ -39,6 +39,7 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 
 ![Skill Counts](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Skill%20Counts.png)
 
+
 ![Job Count by State](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Job%20Counts%20by%20State.png)
 
 - Remote jobs lead the way with 218, but California was close with 195 job openings which makes up ~16% of the job openings for Data Scientist and Data Analyst positions.
@@ -48,14 +49,29 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 - I.T. Support Services and Health Care are the leading industries hiring for Data Scientists and Data Analysts and made up 22% of the openings out of the 68 unique industrieis hiring. 
 
 ## Modeling
-Summarize your findings, highlighting the key insights from the analysis. Use bullet points for clarity.
-
 After testing and tuning all 3 models (Logistic Regression, Random Forest, Stacked LightGBM + XGBoost), I chose the Random Forest model for its scalability, predictive power, and efficiency (especially compared to the stacked model).
 
+![Random_Forest_Metrics](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Random_Forest_Metrics.png)
 
+- The tuned Random Forest model with class balancing generally shows improvements in recall and F1 scores, particularly for difficult-to-predict classes. The accuracy remains stable overall. However, precision dropped for a few cases, possibly due to the class balancing leading to more false positives. The model performed better for skills like Target_Spark, Target_NLP, and Target_Data Mining, but it still struggles with certain skills like Target_Azure, Target_Keras, and Target_Power BI.
 
 ## Conclusion
 Discuss the implications of your analysis and any recommendations or future work.
+
+- The Accuracy values are generally high for most skills, with many above 0.90, which indicates that the model correctly predicts many of the outcomes. However, accuracy alone can be misleading, especially with imbalanced datasets, as it may not reflect how well the model performs on minority classes.
+- Precision and Recall scores show significant variability across skills, suggesting that while the model is good at predicting the presence of some skills, it struggles with others.
+
+**Recommendations**
+1. Further Data Preprocessing and Feature Representation:
+ - Feature Representation: Improve the representation of text data by exploring advanced natural language processing (NLP) techniques such as TF-IDF or Word embeddings (e.g., Word2Vec, BERT), which may help capture the context in which skills are mentioned better than simpler techniques.
+ - Balancing the Dataset: Although class balancing was attempted, it may need further refinement. Techniques such as SMOTE (Synthetic Minority Over-sampling Technique) or ADASYN can be used to better handle imbalanced classes for skills that show poor performance.
+
+2. Model Optimization:
+ - Hyperparameter Tuning: The Random Forest model may benefit from additional hyperparameter tuning. Consider optimizing parameters such as the number of trees (n_estimators), depth of trees (max_depth), and the number of features (max_features) to help improve recall and precision for underperforming classes.
+
+**Summary**
+
+The analysis indicates variability in the model's ability to predict different skills accurately. Some skills are well predicted, while others are not detected at all. Improvements can be made by focusing on better feature engineering, addressing class imbalance, optimizing model parameters, and utilizing more advanced NLP models. Emphasis should also be given to enriching the dataset to ensure that all skills are sufficiently represented.
 
 ## Files
 - `Capstone_2_Final.ipynb`: Main Jupyter Notebook with the final analysis and model.
