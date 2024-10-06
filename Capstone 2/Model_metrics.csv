@@ -1,0 +1,21 @@
+,Skill,Accuracy,Precision,Recall,F1 Score
+0,Target_Spark,0.990291,0.666667,0.666667,0.666667
+1,Target_Python,0.88835,0.526316,0.416667,0.465116
+2,Target_SQL,0.927184,0.384615,0.416667,0.4
+3,Target_R,0.927184,0.733333,0.5,0.594595
+4,Target_NLP,0.985437,1,0.5,0.666667
+5,Target_Statistics,0.941748,0.8,0.571429,0.666667
+6,Target_Excel,0.980583,0,0,0
+7,Target_Power BI,0.985437,0,0,0
+8,Target_scikit-learn,0.985437,0,0,0
+9,Target_Azure,0.985437,0,0,0
+10,Target_Cloud,0.936893,0.3,0.333333,0.315789
+11,Target_Machine Learning,0.815534,0.693878,0.596491,0.641509
+12,Target_Deep Learning,0.980583,0.75,0.5,0.6
+13,Target_Keras,0.995146,0,0,0
+14,Target_Data Analysis,0.927184,0.363636,0.333333,0.347826
+15,Target_TensorFlow,0.980583,0.333333,0.333333,0.333333
+16,Target_AWS,0.980583,0,0,0
+17,Target_Hadoop,1,1,1,1
+18,Target_Tableau,0.970874,0.666667,0.5,0.571429
+19,Target_Data Mining,0.975728,1,0.5,0.666667
