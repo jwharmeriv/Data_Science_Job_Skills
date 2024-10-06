@@ -34,14 +34,22 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 [EDA Report](http://localhost:8888/notebooks/Desktop/Data_Science_Job_Skills/Capstone_2_Final.ipynb)
 
 ![Job Title Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Job%20Title%20Count.png)
+
+- There were 1166 job titles containing Data Scientist and 32 containing Data analyst.
+
 ![Skill Counts](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Skill%20Counts.png)
+
 ![Job Count by State](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Job%20Counts%20by%20State.png)
+
+- Remote jobs lead the way with 218, but California was close with 195 job openings which makes up ~16% of the job openings for Data Scientist and Data Analyst positions.
+
 ![Industry Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Industry%20Hiring%20Counts.png)
 
-
+- I.T. Support Services and Health Care are the leading industries hiring for Data Scientists and Data Analysts and made up 22% of the openings out of the 68 unique industrieis hiring. 
 
 ## Modeling
 Summarize your findings, highlighting the key insights from the analysis. Use bullet points for clarity.
+
 After testing and tuning all 3 models (Logistic Regression, Random Forest, Stacked LightGBM + XGBoost), I chose the Random Forest model for its scalability, predictive power, and efficiency (especially compared to the stacked model).
 
 
