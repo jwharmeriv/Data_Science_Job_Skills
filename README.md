@@ -7,12 +7,12 @@ _Data Scientist and Data Analyst jobs require a specialized set of skills. I wan
 ## Data
 Kaggle is an online community of data scientists and machine learning engineers. Kaggle allows users to find datasets they want to use in building AI models, publish datasets, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges. The data for this dataset was collected by RRK-CODER (Kaggle profile name) through a systematic web scraping process using the Selenium framework. Leveraging Selenium allowed for the automated retrieval and analysis of information from over 1,500 live data science job listings on Glassdoor.com. 
 
-The data encompasses essential details about each job listing, facilitating comprehensive analysis and insights into the data science job market. I decided to focus the analysis on the skills, location, industry, and company ratings for each open position to allow me to prioritize which skills to learn first, which industry is hiring the most data scientists/data analysts, and where these positions are located in the Unites States (including remote positions).
+The data encompasses essential details about each job listing, facilitating comprehensive analysis and insights into the data science job market. I decided to focus the analysis on the skills, location, industry, and company ratings for each open position to allow me to prioritize which skills to learn first, which industry is hiring the most data scientists/data analysts, and where these positions are located in the United States (including remote positions).
 
 [Glassdoor Data Science Job Listings](https://www.kaggle.com/datasets/rrkcoder/glassdoor-data-science-job-listings/data)
 
 ## Method
-Describe the methods you used, such as Exploratory Data Analysis (EDA), Feature Engineering, Model Building, and Evaluation Metrics.
+
 There are many types of classification algorithms out there in the wild, but I decided to start with 3.
 
  - **Logistic Regression:**  Logistic Regression is a simple yet effective linear classifier that works well for text classification tasks. It's interpretable, allowing you to determine which skills have the highest weights, 					which can indicate their demand. It is also computationally efficient and provides easily interpretable results that highlight the most significant features/skills.
@@ -21,7 +21,7 @@ There are many types of classification algorithms out there in the wild, but I d
   
  - **Stacked Model (LightGBM + XGBoost):**  LightGBM (Light Gradient Boosting Machine) and XGBoost are both ensemble methods based on boosting, which means they create a series of weak learners (typically decision trees)          that focus on improving errors from previous iterations. This makes them effective at handling complex patterns in data. Since LightGBM and XGBoost may learn different aspects of the data, stacking helps create a             balanced final model as well as mitigating the risk of overfitting by reducing the variance.
 
-I chose to work with the Random Forest model (after trying all 3) in the in end because it is a strong middle ground, offering good performance for a wide variety of tasks while being more scalable and efficient than the stacked model. It balances complexity and predictive power, making it a good general-purpose model, especially when computational resources are available.
+I chose to work with the Random Forest model (after trying all 3) in the end because it is a strong middle ground, offering good performance for a wide variety of tasks while being more scalable and efficient than the stacked model. It balances complexity and predictive power, making it a good general-purpose model, especially when computational resources are available.
 
 ## Data Cleaning
 To get the data into a better state for analysis and predictive modeling, first I needed to filter out any jobs that did not include "Data Scientist" or "Data Analyst" in the job title. Although some jobs with different titles could essentially be data scientists or data analysts based on the job descriptions, I wanted this to be explicit and not leave any additional room for interpretation regarding job title. I was mostly focused on the skills needed, and this filtering still resulted in over 1,100 records of job titles with Data Scientist or Data Analyst which I deemed sufficient for this exercise. 
@@ -46,7 +46,7 @@ Now a list of skills needed to be defined, so I could make predictions on which 
 
 ![Industry Count](https://github.com/jwharmeriv/Data_Science_Job_Skills/blob/main/Capstone%202/Images/Industry%20Hiring%20Counts.png)
 
-- I.T. Support Services and Health Care are the leading industries hiring for Data Scientists and Data Analysts and made up 22% of the openings out of the 68 unique industrieis hiring. 
+- I.T. Support Services and Health Care are the leading industries hiring for Data Scientists and Data Analysts and made up 22% of the openings out of the 68 unique industries hiring. 
 
 ## Modeling
 After testing and tuning all 3 models (Logistic Regression, Random Forest, Stacked LightGBM + XGBoost), I chose the Random Forest model for its scalability, predictive power, and efficiency (especially compared to the stacked model).
@@ -56,7 +56,6 @@ After testing and tuning all 3 models (Logistic Regression, Random Forest, Stack
 - The tuned Random Forest model with class balancing generally shows improvements in recall and F1 scores, particularly for difficult-to-predict classes. The accuracy remains stable overall. However, precision dropped for a few cases, possibly due to the class balancing leading to more false positives. The model performed better for skills like Target_Spark, Target_NLP, and Target_Data Mining, but it still struggles with certain skills like Target_Azure, Target_Keras, and Target_Power BI.
 
 ## Conclusion
-Discuss the implications of your analysis and any recommendations or future work.
 
 - The Accuracy values are generally high for most skills, with many above 0.90, which indicates that the model correctly predicts many of the outcomes. However, accuracy alone can be misleading, especially with imbalanced datasets, as it may not reflect how well the model performs on minority classes.
 - Precision and Recall scores show significant variability across skills, suggesting that while the model is good at predicting the presence of some skills, it struggles with others.
@@ -73,8 +72,4 @@ Discuss the implications of your analysis and any recommendations or future work
 
 The analysis indicates variability in the model's ability to predict different skills accurately. Some skills are well predicted, while others are not detected at all. Improvements can be made by focusing on better feature engineering, addressing class imbalance, optimizing model parameters, and utilizing more advanced NLP models. Emphasis should also be given to enriching the dataset to ensure that all skills are sufficiently represented.
 
-## Files
-- `Capstone_2_Final.ipynb`: Main Jupyter Notebook with the final analysis and model.
-- `data/`: The dataset(s) used in the project.
-- `README.md`: This file containing the final project report.
 
