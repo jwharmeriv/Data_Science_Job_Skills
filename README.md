@@ -12,7 +12,7 @@ The data encompasses essential details about each job listing, facilitating comp
 [Glassdoor Data Science Job Listings](https://www.kaggle.com/datasets/rrkcoder/glassdoor-data-science-job-listings/data)
 
 ## Method
-Describe the methods you used, such as Exploratory Data Analysis (EDA), Feature Engineering, Model Building, and Evaluation Metrics.
+
 There are many types of classification algorithms out there in the wild, but I decided to start with 3.
 
  - **Logistic Regression:**  Logistic Regression is a simple yet effective linear classifier that works well for text classification tasks. It's interpretable, allowing you to determine which skills have the highest weights, 					which can indicate their demand. It is also computationally efficient and provides easily interpretable results that highlight the most significant features/skills.
