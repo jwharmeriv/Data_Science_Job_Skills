@@ -72,8 +72,4 @@ After testing and tuning all 3 models (Logistic Regression, Random Forest, Stack
 
 The analysis indicates variability in the model's ability to predict different skills accurately. Some skills are well predicted, while others are not detected at all. Improvements can be made by focusing on better feature engineering, addressing class imbalance, optimizing model parameters, and utilizing more advanced NLP models. Emphasis should also be given to enriching the dataset to ensure that all skills are sufficiently represented.
 
-## Files
-- `Capstone_2_Final.ipynb`: Main Jupyter Notebook with the final analysis and model.
-- `data/`: The dataset(s) used in the project.
-- `README.md`: This file containing the final project report.
 
